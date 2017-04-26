@@ -14,7 +14,11 @@ class RepairController extends AdminController
     public function index(){
         $pid = I('get.pid', 0);
 
-        $rows = M('Repair')->select();
+        //$rows = M('Repair')->select();
+
+        $rows   =   $this->lists('Repair');
+        //int_to_string($rows, array('type'=>C('HOOKS_TYPE')));
+
 
         $this->assign('rows',$rows);
 
