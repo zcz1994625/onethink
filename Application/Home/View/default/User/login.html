@@ -1,11 +1,11 @@
 <extend name="Base/common" />
 <block name="header">
-<header class="jumbotron subhead" id="overview">
-  <div class="container">
+<!--<header class="jumbotron subhead" id="overview">-->
+  <!--<div class="container">-->
     <h2>用户登录</h2>
-    <p><span><span class="pull-left"><span>还没有账号? <a href="{:U('User/register')}">立即注册</a></span> </span></p>
-  </div>
-</header>
+    <!--<p><span><span class="pull-left"><span>还没有账号? <a href="{:U('User/register')}">立即注册</a></span> </span></p>-->
+  <!--</div>-->
+<!--</header>-->
 </block>
 
 <block name="body">
@@ -39,10 +39,11 @@
           </div>
           <div class="control-group">
             <div class="controls">
-              <label class="checkbox">
-                <input type="checkbox"> 自动登陆
-              </label>
-              <button type="submit" class="btn">登 陆</button>
+              <!--<label class="checkbox">-->
+                <!--<input type="checkbox"> 自动登陆-->
+              <!--</label>-->
+              <button type="submit" class="btn btn-info" style="width: 100%">登 陆</button>
+                <P><a href="{:U('User/register')}">新用户注册</a></P>
             </div>
           </div>
         </form>
