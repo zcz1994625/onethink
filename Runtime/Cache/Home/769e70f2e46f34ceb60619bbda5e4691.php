@@ -59,7 +59,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-4">
-                            <a href="notice.html">
+                            <a href="<?php echo U('Intro/index');?>">
                                 <div class="indexLabel label-danger">
                                     <span class="glyphicon glyphicon-bullhorn"></span><br/>
                                     小区通知
@@ -99,7 +99,7 @@
                             </a>
                         </div>
                         <div class="col-xs-4">
-                            <a href="notice.html">
+                            <a href="<?php echo U('Active/index');?>">
                                 <div class="indexLabel label-default">
                                     <span class="glyphicon glyphicon-apple"></span><br/>
                                     小区活动
@@ -117,6 +117,9 @@
         <script src="/Public/static/bootstrap1/jquery-1.11.2.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="/Public/static/bootstrap1/js/bootstrap.min.js"></script>
+    
+    
+
     
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-   <block name="header">
+   
        <meta charset="utf-8">
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,8 +9,8 @@
        <title>Bootstrap 101 Template</title>
 
        <!-- Bootstrap -->
-       <link href="__STATIC__/bootstrap1/css/bootstrap.min.css" rel="stylesheet">
-       <link href="__STATIC__/bootstrap1/css/style.css" rel="stylesheet">
+       <link href="/Public/static/bootstrap1/css/bootstrap.min.css" rel="stylesheet">
+       <link href="/Public/static/bootstrap1/css/style.css" rel="stylesheet">
 
        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,14 +22,14 @@
            .main{margin-bottom: 60px;}
            .indexLabel{padding: 10px 0; margin: 10px 0 0; color: #fff;}
        </style>
-   </block>
+   
     <bolock name="style">
 
     </bolock>
 </head>
 <body>
 <div class="main">
-   <block name="nav">
+   
        <!--导航部分-->
        <nav class="navbar navbar-default navbar-fixed-bottom">
            <div class="container-fluid text-center">
@@ -48,18 +48,18 @@
            </div>
        </nav>
        <!--导航结束-->
-   </block>
+   
 
     <div class="container-fluid">
-        <block name="content">
+        
             <div class="indexImg row">
-                <img src="__STATIC__/bootstrap1/image/index.png" width="100%" />
+                <img src="/Public/static/bootstrap1/image/index.png" width="100%" />
             </div>
             <div class="serviceList text-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-4">
-                            <a href="{:U('Intro/index')}">
+                            <a href="/index.php?s=/Home/Intro/index.html">
                                 <div class="indexLabel label-danger">
                                     <span class="glyphicon glyphicon-bullhorn"></span><br/>
                                     小区通知
@@ -75,7 +75,7 @@
                             </a>
                         </div>
                         <div class="col-xs-4">
-                            <a href="{:U('Repair/add')}">
+                            <a href="/index.php?s=/Home/Repair/add.html">
                                 <div class="indexLabel label-info">
                                     <span class="glyphicon glyphicon-heart-empty"></span><br/>
                                     在线报修
@@ -99,7 +99,7 @@
                             </a>
                         </div>
                         <div class="col-xs-4">
-                            <a href="{:U('Active/index')}">
+                            <a href="/index.php?s=/Home/Active/index.html">
                                 <div class="indexLabel label-default">
                                     <span class="glyphicon glyphicon-apple"></span><br/>
                                     小区活动
@@ -109,17 +109,17 @@
                     </div>
                 </div>
             </div>
-        </block>
+        
     </div>
 </div>
-    <block name="footer">
+    
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="__STATIC__/bootstrap1/jquery-1.11.2.min.js"></script>
+        <script src="/Public/static/bootstrap1/jquery-1.11.2.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="__STATIC__/bootstrap1/js/bootstrap.min.js"></script>
-    </block>
-    <block name="script">
+        <script src="/Public/static/bootstrap1/js/bootstrap.min.js"></script>
+    
+    
 
-    </block>
+    
 </body>
 </html>

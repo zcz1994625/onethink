@@ -95,4 +95,22 @@ return array(
         'callback' => false, //检测文件是否存在回调函数，如果存在返回文件信息数组
     ), //附件上传配置（文件上传类配置）
 
+
+    'HTML_CACHE_ON'     =>    true, // 开启静态缓存
+    'HTML_CACHE_TIME'   =>    60,   // 全局静态缓存有效期（秒）
+    'HTML_FILE_SUFFIX'  =>    '.html', // 设置静态缓存文件后缀
+    'HTML_CACHE_RULES'  =>     array(  // 定义静态缓存规则
+        // 定义格式1 数组方式
+        'Index:index'    =>     array('{:module}/{:controller}_{:action}', '24*3600',),
+        'User:login'     =>      array('{:module}/{:controller}_{:action}', '24*3600',),
+
+
+        /* 后台错误页面模板 */
+        'TMPL_ACTION_ERROR'     =>  MODULE_PATH.'View/default/Public/error.html', // 默认错误跳转对应的模板文件
+        'TMPL_ACTION_SUCCESS'   =>  MODULE_PATH.'View/default/Public/success.html', // 默认成功跳转对应的模板文件
+
+    )
+
+
+
 );

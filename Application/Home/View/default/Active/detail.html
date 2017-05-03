@@ -1,0 +1,9 @@
+<extend name="Base/base"/>
+    <block name="content">
+        <div class="blank"></div>
+        <div class="noticeDetailInfo">{$article.name}</div>
+        <div class="noticeDetailInfo">{$article.create_time | time_format}</div>
+        <div class="noticeDetailContent">
+           {$article.content}
+        </div>
+    </block>

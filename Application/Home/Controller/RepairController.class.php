@@ -25,24 +25,29 @@ class RepairController extends HomeController
     }
 
     public function add(){
-        if(IS_POST){
-            $Repair = M('Repair');
-            $data = $Repair->create();
-            if($data){
-                $Repair->repair_time = time();
-                $Repair->sn = rand(1000,9999);
-                $id = $Repair->add();
-                if($id){
-                    $this->success('添加成功',U('index'));
-                    //action_log('update_repair', 'repair', $id, UID);
+        if(!is_login()){
+            $this->redirect('User/login');
+        }else{
+            if(IS_POST){
+                $Repair = M('Repair');
+                $data = $Repair->create();
+                if($data){
+                    $Repair->repair_time = time();
+                    $Repair->sn = rand(1000,9999);
+                    $id = $Repair->add();
+                    if($id){
+                        $this->success('添加成功',U('index'));
+                        //action_log('update_repair', 'repair', $id, UID);
+                    }else{
+                        $this->error('新增失败');
+                    }
                 }else{
-                    $this->error('新增失败');
+                    $this->error($Repair->getError());
                 }
             }else{
-                $this->error($Repair->getError());
+                $this->display();
             }
-        }else{
-            $this->display();
         }
+
     }
 }
